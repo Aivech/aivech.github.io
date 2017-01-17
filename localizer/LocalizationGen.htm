@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Minecraft Localization Generator</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="locgen.css">
+</head>
+<body>
+  <div id="header">
+    <h1>Minecraft Mod Localization Generator</h1>
+  </div>
+  <div id="domain">
+      Mod domain:<br>
+      <input type="text" id="modid" placeholder="minecraft">
+  </div>
+  <div class="input">
+    <div class="textlist">
+      Enter a template for the unlocalized name.<br>Use '%m' for the material and '%i' for the item name.</br>
+      <input type="text" class = "tempinput" id="unloctemp" placeholder="item%i%m">
+    </div>
+    <div class="textlist">
+      Enter a template for the localized name.<br>Use '%m' for the material and '%i' for the item name.<br>
+      <input type="text" class = "tempinput" id="loctemp" placeholder="%i of %m">
+    </div>
+  </div><br>
+
+  <div class="input">
+    <div class="textlist">
+      <p>Enter materials in the format 'unlocalized,localized'. <br>Each entry must be on its own line.</p>
+      <textarea id="matlist" rows="10" placeholder="copper,Copper"></textarea><br>
+    </div>
+    <div class="textlist">
+      <p>Enter item names in the format 'unlocalized,localized'. <br>Each entry must be on its own line.</p>
+      <textarea id="itemlist" rows="10" placeholder="helm,Helmet"></textarea><br>
+    </div>
+  </div><br>
+  
+  <div id="generate">
+    <input class="button" type="button" onclick="generate()" value="Generate">
+  </div>
+  
+  <div id="output">
+  </div>
+  <script src="locgen.js" charset="utf-8"></script>
+</body>

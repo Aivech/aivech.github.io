@@ -1,8 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  background-color: LightYellow;
 }
-#textentries {
+
+h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  background-color: PowderBlue;
+  width: 100%
+}
+
+textarea {
+  width: 100%;
+}
+
+#domain {
+  padding: 1%;
+}
+
+#generate {
+  text-align: center;
+  padding: 1em;
+}
+
+#output {
+  height: 250px;
+  margin: 1%;
+  overflow: scroll;
+  background-color: white;
+  border: 1px solid grey;
+  font-family: "Courier New", Courier, monospace;
+  font-size: .8em;
+}
+
+.tempinput {
+  width: 100%;
+}
+
+.input {
   display: flex;
   flex-direction: row;
+}
+
+.button {
+  font-size: 1em;
+  font-weight: bold;
+  border-style: none;
+  padding: 2em;
+  width: 100%;
+  max-width: 15em;
+  height: 5em;
+  box-shadow: .2em .2em .1em grey;
+  background-color: PowderBlue;
+  text-align: center;
+}
+
+.button:active {
+  box-shadow: 0 0;
+}
+
+.textlist {
+  padding: 1% 1% 1% 1%;
+  width: 50%;
 }
