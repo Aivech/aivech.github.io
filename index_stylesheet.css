@@ -24,14 +24,14 @@
 	text-align: center;
 	display: block;
 	padding: 16px;
-	color: #99cfff;
+	color: #004444;
 	border-radius: 20px;
 	text-decoration: none;
 	font-family: Roboto;
 }
 
 .list a:hover {
-	color: #d3f6ff;
+	color: #205f70;
 	background-color: #99cfff;
 }
 
